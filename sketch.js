@@ -35,6 +35,7 @@ function preload(){
   //fundoBoss = loadImage("");
 }
 function setup(){
+  playerBoss = new player();
   fundoBoss = new chamarBoss();
   fundoBoss.setElementsPosition();
   fundoBoss.hide();
@@ -137,6 +138,7 @@ function draw(){
     grupoMoedas.destroyEach();
     grupoInimigos.destroyEach();
     fundoBoss.display();
+    
 
   }
   drawSprites();
