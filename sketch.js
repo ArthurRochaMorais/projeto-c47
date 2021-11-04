@@ -138,7 +138,10 @@ function draw(){
     grupoMoedas.destroyEach();
     grupoInimigos.destroyEach();
     fundoBoss.display();
-    
+    player.display();
+    Boss.display();
+    criarflecha():
+
 
   }
   drawSprites();
@@ -172,5 +175,10 @@ function gerarInimigosAleatorios(){
     //adicionando nuvem ao grupo
    grupoInimigos.add(inimigo);
   }
+}
+funciona criarflecha(){
+  if(keyCode === 32){
+   flecha = createSprite(player.x,player.y,10,10)
+}
 }
     
