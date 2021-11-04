@@ -1,7 +1,7 @@
 class Player{
     constructor(x,y){
         //this.image =addImage();
-        this.jogador = createSprite();
+
         this.def = 0;
         this.atk = 1;
         this.life = 100;
@@ -39,6 +39,7 @@ class Player{
         noStroke();
         pop();
       }
+       
       display(){
          this.showAtk(); 
          this.showDef();
